@@ -23,7 +23,7 @@ Citizen.CreateThread(function()
                     local pedName = "cs_orleans" -- Personnage à choisir sur le site de https://docs.fivem.net/docs/game-references/ped-models/
                     -------------------------------------------------
                     local pedHash = GetHashKey(pedName)
-                    local ped2 = CreatePed(9, pedHash, pos.x, pos.y, pos.z, heading, true, false)
+                    local ped2 = CreatePed(9, pedHash, pos.x, pos.y, pos.z, heading, false, false)
                     
                     SetEntityInvincible(ped2, invincible)
                     SetBlockingOfNonTemporaryEvents(ped2, true)
